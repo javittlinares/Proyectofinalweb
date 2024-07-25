@@ -1,0 +1,219 @@
+.contenedor-header{
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:". titulo cont";
+    background-color: beige;
+}
+
+h1{
+    grid-area: titulo;
+    text-align: center;
+  
+    font-size: 80px;
+
+}
+
+.cont-busqueda-redes{
+    grid-area: cont;
+  
+    display: flex;
+    align-items: center;
+}
+
+.redes{
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+#busqueda{
+    padding: 10px;
+    border-radius: 15px 0 0 15px;
+   
+}
+
+button{
+    padding: 10px;
+}
+form{
+    display: flex;
+}
+
+nav{
+    font-size: 30px;
+    padding: 20px 150px 20px 150px;
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid;
+
+
+}
+
+nav a{
+   color: aliceblue;
+   text-decoration: none;
+}
+
+/* si esta sobre la etiqueta empieza a cambiar su color*/
+nav a:hover{color: rgb(87, 30, 4);
+
+}
+.hero{
+    border: 2px solid;
+    color: aliceblue;
+    text-align: center;
+    font-size: 35px;
+    padding: 150px;
+    
+    background-image: url(portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero h2, .hero p{
+    width: 70%;
+    margin: auto;  
+}
+
+/*Estilos seccion recomendaciones*/
+.libro-img{
+    width: 250px;
+}
+
+.libro-img img{
+    width: 100%;
+}
+
+.cont-libro-recomendaciones{
+    display: flex;
+    justify-content: space-around;
+}
+.libros-recomendados{
+    padding: 40px;
+    margin-bottom: 50px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.4s;
+    padding: 20px;
+}
+/*aplica los estilos a la clase card solo si el cursor esta sobre el elemento*/
+
+.card:hover{
+transform: scale(1.1);
+box-shadow: 10px 10px 10px rgb(180, 180, 164);
+
+
+}
+
+.card_boton{
+    background-color: red; /*color del rectangulo*/
+    color: white; /*color de las letras*/
+    text-decoration: none;
+    border-radius: 10px;  /*Te da bordes en un rectangulo*/
+    padding: 16px 20px;
+    text-transform: uppercase; /*Te tranasforma a mayusculas todas las letras*/
+}
+
+.cont-libros{
+    display: flex;
+    overflow-x: scroll; /*Como va a manejar el contenido*/
+    padding: 40px;
+    margin-bottom: 50px;
+
+
+}
+
+.h33{
+    color: chocolate;
+    margin: auto;
+}
+
+.card-libros{
+    margin: 0 50px;
+    
+}
+.card-precio-boton{
+    display: flex;
+}
+.card_precio{
+    margin-right: 20px;
+}
+.conocenos{
+    display: flex;
+    
+}
+.conocenos-img{
+    width: 50%;
+    padding: 40px;
+    
+}
+.conocenos-texto{
+    width: 50%;
+    padding: 40px;
+}
+.conocenos-img img{
+    width: 100%;
+}
+
+.centrar{
+    text-align: center;
+    color: red;
+    padding: 10px;
+}
+.rojito{
+    color: rgb(206, 30, 30);
+}
+
+/*Estilos del footer*/ 
+footer{
+  
+    display: grid;
+    padding: 60px;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: antiquewhite;
+    gap: 60px;
+
+}
+
+footer section{
+ 
+  padding-bottom: 18px;
+}
+
+.copy{
+    grid-column: 1/4 ;
+    text-align: center;
+    
+}
+
+footer section h2{
+    border-bottom: 4px solid white;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li{
+    margin-bottom: 18px;
+}
+#correo{
+    padding: 16px;
+}
+
+.boton-enviar{
+  
+   
+    
+    border-radius: 10px; 
+    background-color: rgb(238, 122, 87);
+       
+}
+.footer-redes{
+    text-align: center;
+    font-size: 30px;
+}
