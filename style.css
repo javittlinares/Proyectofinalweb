@@ -17,7 +17,7 @@ h1{
 .cont-busqueda-redes{
     grid-area: cont;
   
-    display: flex;
+    display: flex;    /*Cambian en horizontal*/
     align-items: center;
 }
 
